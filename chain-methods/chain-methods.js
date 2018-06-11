@@ -12,4 +12,6 @@ Using one single line of JavaScript code, complete the following tasks on the ar
 
 const integers = [13, 25, 6, 3, 11, 2, 18, 7, 21, 1, 29, 20, 12, 8];
 
-console.log( (((integers.sort((a, b) => b - a)).filter((num) => num <= 19)).map((num) => (num * 1.5) - 1)).reduce((total, next) => total + next) );
+// console.log( (((integers.sort((a, b) => b - a)).filter((num) => num <= 19)).map((num) => (num * 1.5) - 1)).reduce((total, next) => total + next) );
+
+document.querySelector("#output").textContent = `The final value is: ${(((integers.sort((a, b) => b - a)).filter((num) => num <= 19)).map((num) => (num * 1.5) - 1)).reduce((total, next) => total + next)}`;
